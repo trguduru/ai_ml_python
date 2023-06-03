@@ -48,7 +48,19 @@ print(" Hot ".join(weekdays))
 
 #  append, adds at  the end of the list
 
-weekdays.append("Sunday")
+weekdays.append("Sunday")  # + also can be used to append at the end of the list
 print(weekdays[5])  # return Sunday which was append in the above statement
 
+# delete from list
+del(weekdays[-1])  # deletes last element, or provide an index to delete
+print(weekdays)
+
+# replace an element in the list
+print("Replacing an element in the list")
+print(weekdays)
+weekdays[0] = "Great Start Day"
+print(weekdays)
+
+# print the index of a value
+print(weekdays.index('Wednesday'))
 
