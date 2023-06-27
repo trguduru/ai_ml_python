@@ -2,6 +2,7 @@
 # examples using numpy package , numeric python for arrays and also methods for linear algebra etc...
 
 import numpy as np
+from pandas._libs.hashtable import Vector
 
 # single dimension array
 ages = [10, 14, 20]
@@ -22,7 +23,7 @@ student_ages_array = np.array(student_ages)
 
 print("Student 2D Array : ", student_ages_array)
 
-print(student_ages_array.shape)
+print("Shape of the Array:", student_ages_array.shape)
 
 print(student_ages_array[1, 0])  # print the value 2D array cell
 
@@ -41,5 +42,8 @@ for age in np.nditer(student_ages_array[1]):  # age is the second row in the 2D 
     print(age)
 for name in np.nditer(student_ages_array[0]):  # prints the first row
     print(name)
+
+# print the dimension of the array
+print(student_ages_array.ndim)  # returns 2 as its a 2D
 
 

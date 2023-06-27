@@ -9,4 +9,6 @@ krisha_age = {"Krishan": 10}
 
 student_agents.update(krisha_age)
 
+student_agents.update()
+
 print(student_agents)
